@@ -1,2 +1,1 @@
-# dat110-project4-startcode-iotdevice
-Start code for the IoT device
+# DAT110 Project 4, Gruppe 10
