@@ -29,7 +29,9 @@ public class RestClient {
 		RequestBody body = RequestBody.create(JSON, gson.toJson(msg));
 
 		Request request = new Request.Builder()
-				.url("http://localhost:8080/accessdevice/log")
+				.url("http://"+ Configuration.host 
+						+ ":" + Configuration.port 
+						+ logpath)
 				.post(body)
 				.build();
 		
@@ -56,7 +58,9 @@ public class RestClient {
 		Gson gson = new Gson();
 		
 		Request request = new Request.Builder()
-				.url("http://localhost:8080/accessdevice/code")
+				.url("http://"+ Configuration.host 
+						+ ":" + Configuration.port 
+						+ codepath)
 				.get()
 				.build();
 		
