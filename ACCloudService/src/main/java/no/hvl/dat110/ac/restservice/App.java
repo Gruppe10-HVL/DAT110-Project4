@@ -50,8 +50,6 @@ public class App {
 		// POST /accessdevice/log/
 		post("accessdevice/log", (req, res) -> {
 			Gson gson = new Gson();
-			//JsonObject jsonobj = gson.fromJson(req.body(), JsonObject.class);
-			//String msg = jsonobj.get("message").getAsString();
 			AccessMessage msg = gson.fromJson(req.body(), AccessMessage.class);
 			
 			int id = accesslog.add(msg.getMessage());
