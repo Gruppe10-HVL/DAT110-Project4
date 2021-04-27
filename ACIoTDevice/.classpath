@@ -7,8 +7,8 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="libs/gson-2.8.6.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/JavaFX13"/>
-	<classpathentry kind="lib" path="libs/okhttp-5.0.0-alpha.2.jar"/>
-	<classpathentry kind="lib" path="libs/okhttp-2.7.5.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.USER_LIBRARY/javafx"/>
+	<classpathentry kind="lib" path="libs/okhttp-3.4.2.jar"/>
+	<classpathentry kind="lib" path="libs/okio-1.9.0.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

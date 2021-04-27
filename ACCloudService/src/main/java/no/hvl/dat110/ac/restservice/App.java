@@ -52,7 +52,7 @@ public class App {
 			Gson gson = new Gson();
 			//JsonObject jsonobj = gson.fromJson(req.body(), JsonObject.class);
 			//String msg = jsonobj.get("message").getAsString();
-			AccessMessage msg = gson.fromJson(req.body(), AccessMessage.class);;
+			AccessMessage msg = gson.fromJson(req.body(), AccessMessage.class);
 			
 			int id = accesslog.add(msg.getMessage());
 			return gson.toJson(accesslog.get(id));
